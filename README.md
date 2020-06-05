@@ -1,9 +1,10 @@
 # Projects
 
-Chapter 1 - Base
+Chapter 1 - Base 
+  -
+ HTML, CSS and vanilla javascript
   - Favorite countries chooser
   - Color roller RGB
-
 Chapter 2 - API development
   -
 
