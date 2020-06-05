@@ -15,27 +15,27 @@ function start() {
     greenBar = document.querySelector('#greenBar');
     blueBar = document.querySelector('#blueBar');
 
-    redText = document.querySelector('#redText');
-    greenText = document.querySelector('#greenText');
-    blueText = document.querySelector('#blueText');
+    redText = document.querySelector('#redInput');
+    greenText = document.querySelector('#greenInput');
+    blueText = document.querySelector('#blueInput');
 
     redText.value = redBar.value;
     greenText.value = greenBar.value;
     blueText.value = blueBar.value;
 
-    colorBox = document.querySelector('.colorBox');
+    colorBox = document.querySelector('#colorBox');
     colorBox.style.backgroundColor = `rgb(${redBar.value}, ${greenBar.value}, ${blueText.value})`
     
     redBar.addEventListener('input', function() {
-        document.getElementById('redText').value = redBar.value
+        document.getElementById('redInput').value = redBar.value
         updateBackgroundColor(colorBox)
     })
     greenBar.addEventListener('input', function() {
-        document.getElementById('greenText').value = greenBar.value
+        document.getElementById('greenInput').value = greenBar.value
         updateBackgroundColor(colorBox)
     })
     blueBar.addEventListener('input', function() {
-        document.getElementById('blueText').value = blueBar.value
+        document.getElementById('blueInput').value = blueBar.value
         updateBackgroundColor(colorBox)
     })
 

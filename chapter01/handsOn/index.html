@@ -5,26 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color roller RGB</title>
 
-    <link rel='stylesheet' href='./css/reset.css'/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel='stylesheet' href='./css/style.css'/>
 </head>
 <body>
-    <div class="everything">
-        <div class="verticalBar">
+    <div class="d-flex justify-content-center">
+        <h1 class="display-1" id="title">Color roller</h1>
+    </div>
+    <div>
+        <div class="d-flex justify-content-center " id="verticalBar">
             <input type="range" min="0" max="255" id="redBar"/> 
             <input type="range" min="0" max="255" id="greenBar"/>
             <input type="range" min="0" max="255" id="blueBar"/>
         </div>
-        <div class="disableText">
-            <input type="text" id="redText" value="" disabled/>
-            <input type="text" id="greenText" value="" disabled/>
-            <input type="text" id="blueText" value="" disabled/>
+        <div class="d-flex justify-content-center" id="disableText">
+            <input type="text" id="redInput" value="" disabled/>
+            <input type="text" id="greenInput" value="" disabled/>
+            <input type="text" id="blueInput" value="" disabled/>
         </div>
-
-        <div class="colorBox">   </div>
-        <p id="red">Red</p>
-        <p id="green">Green</p>
-        <p id="blue">Blue</p>
+        <div class="d-flex justify-content-center">
+            <div id="colorBox"></div>
+        </div>
+        <div class="d-flex justify-content-center" id="text">
+            <p id="red">Red</p>
+            <p id="green">Green</p>
+            <p id="blue">Blue</p>
+        </div>
     </div>
 
     <script src='./js/script.js'></script>

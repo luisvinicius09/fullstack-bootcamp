@@ -1,70 +1,69 @@
-.verticalBar {
-    display: inline-block;
-    width: 608px;
-    height: 150px;
-    padding: 0;
-}
-
-.verticalBar input {
+#verticalBar input {
     width: 200px;
     height: 50px;
     margin: 0;
     transform-origin: 200px 100px;
     transform: rotate(-90deg);
+    position: relative;
+    right: 25px;
 }
-
-#redText {
-    width: 50px;
-    position: absolute;
-    top: 70px;
-    left: 98px;
+#text {
+    position: relative;
+    top: 65px;
 }
-
-#greenText {
-    width: 50px;
-    position: absolute;
-    top: 70px;
-    left: 302px;
+#disableText {
+    position: relative;
+    margin: 30px;
+    bottom: 20px;
 }
-
-#blueText {
-    width: 50px;
-    position: absolute;
-    top: 70px;
-    left: 505px;
-}
-
-.colorBox {
+#colorBox {
     border-radius: 10px;
-    width: 500px;
+    width: 650px;
     height: 100px;
-    position: absolute;
-    top: 320px; 
-    left: 80px;
+    position: relative;
+    top: 200px;
 }
-
+#redInput {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    right: 164px;
+}
+#greenInput {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    left: 2px;
+}
+#blueInput {
+    width: 35px;
+    height: 25px;
+    position: relative;
+    left: 167px;
+}
 #red {
     font-weight: bold;
-    position: absolute;
-    top: 50px; left: 108px;
     color: red;
     text-shadow: 1px 1px black;
+    position: relative;
+    right: 161px;
 }
 #green {
     font-weight: bold;
-    position: absolute;
-    top: 50px; left:306px;
     color: green;
     text-shadow: 1px 1px black;
+    position: relative;
+    left: 2px;
 }
 #blue {
     font-weight: bold;
-    position: absolute;
-    top: 50px; left: 515px;
     color: blue;
     text-shadow: 1px 1px black;
+    position: relative;
+    left: 166px;
 }
 
+/* 
 body {
 	background: linear-gradient(-75deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 1400%;
@@ -81,4 +80,4 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
-}
+} */
