@@ -1,0 +1,84 @@
+.verticalBar {
+    display: inline-block;
+    width: 608px;
+    height: 150px;
+    padding: 0;
+}
+
+.verticalBar input {
+    width: 200px;
+    height: 50px;
+    margin: 0;
+    transform-origin: 200px 100px;
+    transform: rotate(-90deg);
+}
+
+#redText {
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    left: 98px;
+}
+
+#greenText {
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    left: 302px;
+}
+
+#blueText {
+    width: 50px;
+    position: absolute;
+    top: 70px;
+    left: 505px;
+}
+
+.colorBox {
+    border-radius: 10px;
+    width: 500px;
+    height: 100px;
+    position: absolute;
+    top: 320px; 
+    left: 80px;
+}
+
+#red {
+    font-weight: bold;
+    position: absolute;
+    top: 50px; left: 108px;
+    color: red;
+    text-shadow: 1px 1px black;
+}
+#green {
+    font-weight: bold;
+    position: absolute;
+    top: 50px; left:306px;
+    color: green;
+    text-shadow: 1px 1px black;
+}
+#blue {
+    font-weight: bold;
+    position: absolute;
+    top: 50px; left: 515px;
+    color: blue;
+    text-shadow: 1px 1px black;
+}
+
+body {
+	background: linear-gradient(-75deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 1400%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

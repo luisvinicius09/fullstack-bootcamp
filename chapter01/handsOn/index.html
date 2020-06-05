@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color roller RGB</title>
+
+    <link rel='stylesheet' href='./css/reset.css'/>
+    <link rel='stylesheet' href='./css/style.css'/>
+</head>
+<body>
+    <div class="everything">
+        <div class="verticalBar">
+            <input type="range" min="0" max="255" id="redBar"/> 
+            <input type="range" min="0" max="255" id="greenBar"/>
+            <input type="range" min="0" max="255" id="blueBar"/>
+        </div>
+        <div class="disableText">
+            <input type="text" id="redText" value="" disabled/>
+            <input type="text" id="greenText" value="" disabled/>
+            <input type="text" id="blueText" value="" disabled/>
+        </div>
+
+        <div class="colorBox">   </div>
+        <p id="red">Red</p>
+        <p id="green">Green</p>
+        <p id="blue">Blue</p>
+    </div>
+
+    <script src='./js/script.js'></script>
+</body>
+</html>
