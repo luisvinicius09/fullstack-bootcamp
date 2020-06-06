@@ -129,7 +129,7 @@ function createButton(id, text) {
         image.textContent = 'add';
         buttonLink.appendChild(image);
     } else if (text === '-') {
-        buttonLink.classList = 'btn shadow-sm';
+        buttonLink.classList = 'btn shadow-lg';
         image.textContent = 'delete_forever';
         buttonLink.appendChild(image);
     }

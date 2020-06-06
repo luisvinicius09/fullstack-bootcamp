@@ -43,7 +43,7 @@ li {
     width: 300px;
     height: 150px;;
     background-color: lightblue;
-    border-style: solid;
+    /* border-style: solid; */
     border-color: lightseagreen;
     margin: 10px;
     border-radius: 10px;
@@ -53,10 +53,10 @@ li {
 }
 .btn {
     position: relative;
-    left: 2px;
+    left: 5px;
     bottom: 14px;
     background-color: lightcoral;
-    border-color: black;
+    /* border-color: black; */
     border-radius: 8px;
     width: 290px;
     height: 40px;
@@ -65,14 +65,14 @@ li {
     background-color: mediumturquoise;
     border-radius: 10px;
     padding: 20px;
-    border-style: solid;
+    /* border-style: solid; */
     font-family: Blippo, fantasy;
 }
 #header2 {
     background-color: mediumturquoise;
     border-radius: 10px;
     padding: 20px;
-    border-style: solid;
+    /* border-style: solid; */
     font-family: Blippo, fantasy;
 }
 #column1 {
