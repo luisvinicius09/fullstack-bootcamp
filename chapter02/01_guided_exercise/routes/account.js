@@ -1,6 +1,6 @@
 var express = require("express");
 var router = express.Router();
-var fs = require("fs")
+var fs = require("fs").promises;
 
 
 router.post("/", (req, res) => {                    // Metodo POST
@@ -18,6 +18,7 @@ router.post("/", (req, res) => {                    // Metodo POST
                     } else {
                         res.end();
                     }
+                logger.info(`POST /account - ${JSON.stringify.account}`)
                 });
             } catch (err) {
                 res.status(400).send({error: err.message});
