@@ -3,6 +3,7 @@
 Chapter 1 - Base 
   -
  HTML, CSS and vanilla javascript
+  - Record List
   - Favorite countries chooser
   - Color roller RGB
   
