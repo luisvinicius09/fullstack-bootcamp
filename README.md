@@ -8,7 +8,7 @@ Chapter 1 - Base
   - [Color roller RGB](https://rev0lts.github.io/fullstack-bootcamp/chapter01/handsOn/)
   
 Chapter 2 - API development
-  -
+  -~~sadface~~
 
 Chapter 3 - FrontEnd with React
  -
