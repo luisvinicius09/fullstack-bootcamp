@@ -8,7 +8,8 @@ Chapter 1 - Base
   - [Color roller RGB](https://rev0lts.github.io/fullstack-bootcamp/chapter01/handsOn/)
   
 Chapter 2 - API development
-  - ~~sadface~~
+  - 
+  - I could not deal with the teacher, with bad explanations and lost thoughts many times.~~sadface~~(but i will learn APIs...)
 
 Chapter 3 - FrontEnd with React
  -
