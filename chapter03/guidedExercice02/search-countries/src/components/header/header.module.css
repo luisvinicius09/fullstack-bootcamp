@@ -1,0 +1,16 @@
+.flexRow {
+    display: flex;
+    flex-direction: rox;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.population {
+    min-width: 180px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.countries {
+    min-width: 100px;
+}
