@@ -9,11 +9,12 @@ Chapter 1 - Base
   
 Chapter 2 - API development
   - 
-  - I could not deal with the teacher, with bad explanations and lost thoughts many times.~~sadface~~(but i will learn APIs...)
+  - I could not deal with the teacher, he lost thoughts many times and he has bad explanations. ~~sadface~~ (but i will learn APIs...)
 
 Chapter 3 - FrontEnd with React
  -
  - 'Comparing JS with React(JS w/ no performace, JS w/perf., React w/ classes and React w/ Hooks)'
-
+ - Filtering a list of all countries in React
+ 
 Chapter 4 - Data persistence, code version control and deployment
  -
