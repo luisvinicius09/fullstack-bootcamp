@@ -9,7 +9,7 @@ Chapter 1 - Base
   
 Chapter 2 - API development
   - 
-  - I could not deal with the teacher, he lost thoughts many times and he has bad explanations.~~sadface~~(but i will learn APIs...)
+  - I could not deal with the teacher, he lost thoughts many times and he has bad explanations. ~~sadface~~ (but i will learn APIs...)
 
 Chapter 3 - FrontEnd with React
  -
