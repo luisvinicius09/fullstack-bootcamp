@@ -69,10 +69,17 @@ export default class App extends Component {
 
     return (
     <div className='container'>
-      <h1>React Countries</h1>
+      <h1 style={styles.centeredTitle}>React Countries</h1>
       <Header filter={filter} countryCount={filteredCountries.length} totalPopulation={filteredPopulation} onChangeFilter={this.handleChangeFilter}/>
       <Countries countries={filteredCountries}/>
       </div>
       )
   }
 }
+
+
+const styles = {
+  centeredTitle: {
+    textAlign: 'center',
+  },
+};
