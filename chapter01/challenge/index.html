@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Challenge</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>USER SEARCH</h1>
+        
+        <form autocomplete="off">
+            <div class="search-area">
+                <input id="search-field" type="text" placeholder="Search"/>
+            </div>
+            <div class="button-container">
+                <button id="search-button">Search
+                <button id="clean-button">Clean
+            </div>
+        </form>
+    
+        <div id="results-container">
+            <div id='user-list'>
+                <h3 id="results-test">Name List</h3>
+                <div id="found-list"></div>
+            </div>
+    
+            <div id='statistics'>
+                <h3>Statistics</h3>
+                <div id="found-stats"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
