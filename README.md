@@ -14,7 +14,8 @@ Chapter 2 - API development
 Chapter 3 - FrontEnd with React
  -
  - 'Comparing JS with React(JS w/ no performace, JS w/perf., React w/ classes and React w/ Hooks)'
- - Filtering a list of all countries in React
+ - Filtering a list of all countries
+ - Votes app
  
 Chapter 4 - Data persistence, code version control and deployment
  -
