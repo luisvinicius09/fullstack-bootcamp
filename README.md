@@ -6,6 +6,7 @@ Chapter 1 - Base
   - [Record List](https://rev0lts.github.io/fullstack-bootcamp/chapter01/class09/) ~~developing css~~
   - [Favorite countries chooser](https://rev0lts.github.io/fullstack-bootcamp/chapter01/class17/)
   - [Color roller RGB](https://rev0lts.github.io/fullstack-bootcamp/chapter01/handsOn/)
+  - [User search](https://rev0lts.github.io/fullstack-bootcamp/chapter01/challenge/)
   
 Chapter 2 - API development
   - 
