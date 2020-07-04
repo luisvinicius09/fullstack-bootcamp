@@ -145,6 +145,7 @@ function captureInput() {
 function handleTyping(currentKey, filteredText) {
         if (currentKey === 'Backspace') {
             foundUsers.textContent = '';
+            foundStats.textContent = ''
         }
         if (currentKey !== 'Enter') {
             return;
