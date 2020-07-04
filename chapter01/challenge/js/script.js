@@ -11,6 +11,8 @@ let button = null;
 
 searches = []
 
+const placeholder = 'Nothing to show here !'
+
 window.addEventListener('load', () => {    
 
     // prevent form submit
@@ -18,16 +20,16 @@ window.addEventListener('load', () => {
         event.preventDefault();
     });
     
-    input = document.querySelector('#search-field');
+    input = document.querySelector('#searchField');
     input.focus()
 
     summary = document.querySelector('#results-summary');
 
     foundUsers = document.querySelector('#found-list');
-    foundStats = document.querySelector('#found-stats');
+    foundStats = document.querySelector('#foundStats');
 
-    button = document.querySelector('#search-button');
-    clean = document.querySelector('#clean-button');
+    button = document.querySelector('#searchButton');
+    clean = document.querySelector('#cleanButton');
 
 
     fetchUsers();
@@ -60,32 +62,38 @@ async function fetchUsers() {
 }
 
 function render() {
-    const div = document.createElement("div");
+
     // foundUsers.appendChild(div);
 
     searches.forEach(user => {
-        const { name, gender, age, picture } = user;
+        const { name, gender, age, photo } = user;
         
-        const info = createInfo(name, gender[0].toUpperCase(), age);
+        const info = createInfo(name, photo, age);
 
         foundUsers.appendChild(info)
 
     })
+    handleStats(searches);
 }
 
-function createInfo(name, gender, age) {
+function createInfo(name, photo, age) {
     const infoList = document.createElement('ul');
+
+    const div = document.createElement("div");
+
     const infoName = document.createElement('li');
-    const infoGender = document.createElement('li');
     const infoAge = document.createElement('li');
+    const infoPhoto = document.createElement('img');
 
     infoName.textContent = name;
-    infoGender.textContent = gender;
     infoAge.textContent = age;
+    infoPhoto.setAttribute("src", photo);
+    div.setAttribute("id", "info")
 
-    infoList.appendChild(infoName);
-    infoList.appendChild(infoGender);
-    infoList.appendChild(infoAge);
+    infoList.appendChild(infoPhoto);
+    div.appendChild(infoName);
+    div.appendChild(infoAge);
+    infoList.appendChild(div);
 
     return infoList;
 }
@@ -121,7 +129,6 @@ function filterUsers(filteredText) {
         return user.nameToLowerCase.includes(filteredText);
     })
     searches = filteredUsers
-
 }
 
 function captureInput() {
@@ -163,9 +170,34 @@ function cleanInput() {
     clean.addEventListener('click', () => {
         input.value = '';
         foundUsers.textContent= '';
+        foundStats.textContent = ''
     })
 }
 
-function handleStats() {
+function handleStats(searches) {
+    const countMale = searches.filter(user => user.gender === 'male').length;
+    const countFemale = searches.filter(user => user.gender === 'female').length;
+
+    const sumAges = searches.reduce((accumulator, current) => {
+        return accumulator + current.age
+    }, 0);
+    const averageAges = sumAges / searches.length || 0;
+
+    foundStats.textContent = ''
+
+    const info1 = document.createElement('p');
+    const info2 = document.createElement('p');
+    const info3 = document.createElement('p');
+    const info4 = document.createElement('p');
     
+    info1.textContent = `Male count: ${countMale}`;
+    info2.textContent = `Female count: ${countFemale}`;
+    info3.textContent = `Sum of ages: ${sumAges}`;
+    info4.textContent = `Average ages: ${averageAges.toFixed()}`;
+
+    foundStats.appendChild(info1);
+    foundStats.appendChild(info2);
+    foundStats.appendChild(info3);
+    foundStats.appendChild(info4);
+
 }

@@ -5,33 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+
 
     <title>Challenge</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container">
+    <div class='header'>
         <h1>USER SEARCH</h1>
+    </div>
+    <div class="container">
         
         <form autocomplete="off">
-            <div class="search-area">
-                <input id="search-field" type="text" placeholder="Search"/>
+            <div id="searchArea">
+                <input id="searchField" type="text" placeholder="Search"/>
             </div>
-            <div class="button-container">
-                <button id="search-button">Search
-                <button id="clean-button">Clean
+            <div id="buttonContainer">
+                <button id="searchButton">Search
+                <button id="cleanButton">Clean
             </div>
         </form>
     
-        <div id="results-container">
-            <div id='user-list'>
-                <h3 id="results-test">Name List</h3>
+        <div id="resultsContainer">
+            <div id='userList'>
+                <h3 id="resultsTest">Name List</h3>
                 <div id="found-list"></div>
             </div>
     
             <div id='statistics'>
                 <h3>Statistics</h3>
-                <div id="found-stats"></div>
+                <div id="foundStats"></div>
             </div>
         </div>
 

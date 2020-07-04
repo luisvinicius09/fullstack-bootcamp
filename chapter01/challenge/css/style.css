@@ -1,7 +1,116 @@
+body {
+    margin: 0px;
+    background-color: #979dac;
+}
 h1 {
-    text-align: center;
+    text-align: start;
     font-family: 'Roboto', sans-serif;
-    font-size: 4rem;
-    color: #8da9c4;
-    text-shadow: 3px 3px 3px gray;
+    font-size: 1.5rem;
+    color: #3c6e71;
+    text-shadow: 1.5px 1.5px 1.5px gray;
+    padding: 5px;
+    padding-left: 15px;
+}
+h1:hover {
+    cursor: default;
+}
+
+.header {
+    border-bottom: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+form {
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+#searchField {
+    border-style: none;
+    border-radius: 3px;
+    padding: 5px;
+    margin-right: 10px;
+    width: 300px;
+}
+
+#searchField:focus {
+    outline: none;
+    border-bottom: 3px solid #5fa8d3;
+    
+}
+
+#searchButton {
+    border-style: none;
+    margin-right: 10px;
+    width: 60px;
+    height: 25px;
+    background-color: #457b9d;
+    color: #f1faee;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+#searchButton:hover {
+    cursor: pointer;
+}
+
+#cleanButton {
+    border-style: none;
+    margin-right: 10px;
+    width: 60px;
+    height: 25px;
+    background-color: #e63946;
+    color: #f1faee;
+    border-radius: 3px;
+    font-weight: bold;
+}
+#cleanButton:hover {
+    cursor: pointer;
+}
+
+#resultsContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    padding: 5px;
+}
+#userList {
+    width: 400px;
+    margin-right: 40px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    background-color: #457b9d;
+    box-shadow: 5px 5px 5px 3px grey;
+    border-radius: 5px;
+    padding: 10px;
+}
+#resultsTest {
+    font-family: 'Concert One', cursive;
+    text-align: center;
+}
+#statistics {
+    font-family: 'Concert One', cursive;
+    text-align: center;
+    width: 200px;
+}
+#foundStats {
+    text-align: start;
+}
+#info {
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
 }
